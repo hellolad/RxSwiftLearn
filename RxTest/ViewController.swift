@@ -69,6 +69,9 @@ class ViewController: UIViewController {
             TestAsyncSubject.test()
         }
         
+        of("PublishSubject") {
+            TestPublishSubject.test()
+        }
     }
 }
 
