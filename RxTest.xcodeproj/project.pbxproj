@@ -18,6 +18,7 @@
 		F5FA10B3205F6B50001F9C70 /* TestMaybe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA10B2205F6B50001F9C70 /* TestMaybe.swift */; };
 		F5FA10B5205F8B3F001F9C70 /* TestAsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA10B4205F8B3F001F9C70 /* TestAsyncSubject.swift */; };
 		F5FA10B8205F8D9F001F9C70 /* TestPublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA10B7205F8D9F001F9C70 /* TestPublishSubject.swift */; };
+		F5FA10BA205F9AF8001F9C70 /* TestReplaySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA10B9205F9AF8001F9C70 /* TestReplaySubject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F5FA10B2205F6B50001F9C70 /* TestMaybe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMaybe.swift; sourceTree = "<group>"; };
 		F5FA10B4205F8B3F001F9C70 /* TestAsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAsyncSubject.swift; sourceTree = "<group>"; };
 		F5FA10B7205F8D9F001F9C70 /* TestPublishSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPublishSubject.swift; sourceTree = "<group>"; };
+		F5FA10B9205F9AF8001F9C70 /* TestReplaySubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestReplaySubject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				F5FA10B4205F8B3F001F9C70 /* TestAsyncSubject.swift */,
 				F5FA10B7205F8D9F001F9C70 /* TestPublishSubject.swift */,
+				F5FA10B9205F9AF8001F9C70 /* TestReplaySubject.swift */,
 			);
 			path = "Subject-既被监听也可观察";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				F5FA10B5205F8B3F001F9C70 /* TestAsyncSubject.swift in Sources */,
 				F5FA10B3205F6B50001F9C70 /* TestMaybe.swift in Sources */,
 				F5FA10AE205F5EC4001F9C70 /* TestSingle.swift in Sources */,
+				F5FA10BA205F9AF8001F9C70 /* TestReplaySubject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

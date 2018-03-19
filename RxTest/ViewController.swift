@@ -72,6 +72,10 @@ class ViewController: UIViewController {
         of("PublishSubject") {
             TestPublishSubject.test()
         }
+        
+        of("ReplaySubject") {
+            TestReplaySubject.test()
+        }
     }
 }
 
