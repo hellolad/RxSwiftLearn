@@ -22,6 +22,8 @@ enum SingleError: Error {
 }
 
 struct TestSingle {
+    private static let bag = DisposeBag()
+    
     static func getHeroListId() -> Single<[String: Any]> {
         return Single<[String: Any]>.create {single in
             let url = "ttps://g37simulator.webapp.163.com/get_heroid_list?rarity=0&page=1&per_page=1000"
@@ -41,6 +43,21 @@ struct TestSingle {
             task.resume()
             return Disposables.create { task.cancel() }
         }
+    }
+    
+    static func test() {
+        self.getHeroListId()
+            .subscribe(onSuccess: { json in
+                print(json)
+            }, onError: { error in
+                switch error as! SingleError {
+                case .cantParseJSON:
+                    print("Single can't parse json")
+                case .getDataError:
+                    print("Single get data error")
+                }
+            })
+            .disposed(by: bag)
     }
 }
 

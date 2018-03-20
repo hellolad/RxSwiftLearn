@@ -22,7 +22,9 @@ enum CompletableError: Error {
 }
 
 struct TestCompletable {
-    static func testCompletable(_ flag: Bool) -> Completable {
+    private static let bag = DisposeBag()
+    
+    private static func testCompletable(_ flag: Bool) -> Completable {
         return Completable.create(subscribe: { completable in
             if flag {
                 completable(.completed)
@@ -32,6 +34,18 @@ struct TestCompletable {
             
             return Disposables.create()
         })
-        
+    }
+    
+    static func test() {
+        self.testCompletable(true)
+            .subscribe(onCompleted: {
+                print("Completable is success")
+            }, onError: { error in
+                switch error as! CompletableError {
+                case .cantFalse:
+                    print("Completable can't false")
+                }
+            })
+            .disposed(by: bag)
     }
 }

@@ -22,7 +22,9 @@ enum MaybeError: Error {
 }
 
 struct TestMaybe {
-    static func inputNumber(_ number: Int) -> Maybe<String> {
+    private static let bag = DisposeBag()
+    
+    private static func inputNumber(_ number: Int) -> Maybe<String> {
         return Maybe<String>.create { maybe in
             switch number {
             case 0:
@@ -37,13 +39,20 @@ struct TestMaybe {
             return Disposables.create()
         }
     }
-}
-
-extension Reactive where Base: UILabel {
-    public var textColor: Binder<UIColor> {
-        return Binder(self.base) { label, textColor in
-            label.textColor = textColor
-        }
+    static func test() {
+        TestMaybe.inputNumber(0)
+            .subscribe(onSuccess: { str in
+                print("Maybe \(str)")
+            }, onError: { error in
+                switch error as! MaybeError {
+                case .numberError:
+                    print("Maybe number error")
+                }
+            }, onCompleted: {
+                print("Maybe completed")
+            })
+            .disposed(by: bag)
+        
     }
 }
 

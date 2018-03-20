@@ -22,47 +22,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         of("single") {
-            TestSingle.getHeroListId()
-                .subscribe(onSuccess: { json in
-                    print(json)
-                }, onError: { error in
-                    switch error as! SingleError {
-                    case .cantParseJSON:
-                        print("Single can't parse json")
-                    case .getDataError:
-                        print("Single get data error")
-                    }
-                })
-                .disposed(by: bag)
+            TestSingle.test()
         }
         
-        
         of("completable") {
-            TestCompletable.testCompletable(true)
-                .subscribe(onCompleted: {
-                    print("Completable is success")
-                }, onError: { error in
-                    switch error as! CompletableError {
-                    case .cantFalse:
-                        print("Completable can't false")
-                    }
-                })
-                .disposed(by: bag)
+            TestCompletable.test()
         }
         
         of("Maybe") {
-            TestMaybe.inputNumber(0)
-                .subscribe(onSuccess: { str in
-                    print("Maybe \(str)")
-                }, onError: { error in
-                    switch error as! MaybeError {
-                    case .numberError:
-                        print("Maybe number error")
-                    }
-                }, onCompleted: {
-                    print("Maybe completed")
-                })
-                .disposed(by: bag)
+            TestMaybe.test()
         }
         
         of("AsyncSubject") {
@@ -76,6 +44,11 @@ class ViewController: UIViewController {
         of("ReplaySubject") {
             TestReplaySubject.test()
         }
+        
+        of("BehavioSubject") {
+            TestBehavioSubject.test()
+        }
+        
     }
 }
 
