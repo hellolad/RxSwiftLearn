@@ -17,17 +17,6 @@ struct TestRetry {
     private static let bag = DisposeBag()
     private static let retryCount = 3   // 尝试次数
     
-    //    private static func get3(_ int: Int) -> Single<Bool> {
-    //        return Single<Bool>.create(subscribe: { single in
-    //            if int >= 3 {
-    //                single(.success(true))
-    //            } else {
-    //                single(.error(RetryError.errorNumber))
-    //            }
-    //            return Disposables.create()
-    //        })
-    //    }
-    //
     static func test() {
         var index = 1   // 当前尝试次数
         let get3 = Single<Bool>.create(subscribe: { single in

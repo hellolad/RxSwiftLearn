@@ -57,6 +57,10 @@ class ViewController: UIViewController {
             TestRetry.test()
         }
         
+        of("RetryWhen") {
+            TestRetryWhen.test()
+        }
+        
     }
 }
 

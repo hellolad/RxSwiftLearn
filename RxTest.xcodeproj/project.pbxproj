@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4DEDEB502BCD86770638C131 /* Pods_RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691417A352E5109CF89021B1 /* Pods_RxTest.framework */; };
+		F524F68C2060F3D6002C3826 /* TestRetryWhen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F524F68B2060F3D6002C3826 /* TestRetryWhen.swift */; };
 		F5E2FD9C2060DE5200B28CE1 /* TestBehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2FD9B2060DE5200B28CE1 /* TestBehaviorSubject.swift */; };
 		F5E2FD9E2060E04800B28CE1 /* TestVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2FD9D2060E04800B28CE1 /* TestVariable.swift */; };
 		F5E2FDA02060E4DB00B28CE1 /* TestRetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2FD9F2060E4DB00B28CE1 /* TestRetry.swift */; };
@@ -28,6 +29,7 @@
 		691417A352E5109CF89021B1 /* Pods_RxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CA7FCF1E8CB49DD23198B7 /* Pods-RxTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTest/Pods-RxTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C7D960987E4AAB269A1E2DF3 /* Pods-RxTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTest/Pods-RxTest.release.xcconfig"; sourceTree = "<group>"; };
+		F524F68B2060F3D6002C3826 /* TestRetryWhen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRetryWhen.swift; sourceTree = "<group>"; };
 		F5E2FD9B2060DE5200B28CE1 /* TestBehaviorSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBehaviorSubject.swift; sourceTree = "<group>"; };
 		F5E2FD9D2060E04800B28CE1 /* TestVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVariable.swift; sourceTree = "<group>"; };
 		F5E2FD9F2060E4DB00B28CE1 /* TestRetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRetry.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F5E2FD9F2060E4DB00B28CE1 /* TestRetry.swift */,
+				F524F68B2060F3D6002C3826 /* TestRetryWhen.swift */,
 			);
 			path = "ErrorHandling-错误处理";
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				F5FA10B5205F8B3F001F9C70 /* TestAsyncSubject.swift in Sources */,
 				F5FA10B3205F6B50001F9C70 /* TestMaybe.swift in Sources */,
 				F5FA10AE205F5EC4001F9C70 /* TestSingle.swift in Sources */,
+				F524F68C2060F3D6002C3826 /* TestRetryWhen.swift in Sources */,
 				F5FA10BA205F9AF8001F9C70 /* TestReplaySubject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
