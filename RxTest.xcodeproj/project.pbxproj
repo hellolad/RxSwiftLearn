@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4DEDEB502BCD86770638C131 /* Pods_RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691417A352E5109CF89021B1 /* Pods_RxTest.framework */; };
 		F5E2FD9C2060DE5200B28CE1 /* TestBehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2FD9B2060DE5200B28CE1 /* TestBehaviorSubject.swift */; };
+		F5E2FD9E2060E04800B28CE1 /* TestVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2FD9D2060E04800B28CE1 /* TestVariable.swift */; };
+		F5E2FDA02060E4DB00B28CE1 /* TestRetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2FD9F2060E4DB00B28CE1 /* TestRetry.swift */; };
 		F5FA109C205F5AA0001F9C70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA109B205F5AA0001F9C70 /* AppDelegate.swift */; };
 		F5FA109E205F5AA0001F9C70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA109D205F5AA0001F9C70 /* ViewController.swift */; };
 		F5FA10A1205F5AA0001F9C70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FA109F205F5AA0001F9C70 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 		A0CA7FCF1E8CB49DD23198B7 /* Pods-RxTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTest/Pods-RxTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C7D960987E4AAB269A1E2DF3 /* Pods-RxTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTest/Pods-RxTest.release.xcconfig"; sourceTree = "<group>"; };
 		F5E2FD9B2060DE5200B28CE1 /* TestBehaviorSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBehaviorSubject.swift; sourceTree = "<group>"; };
+		F5E2FD9D2060E04800B28CE1 /* TestVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVariable.swift; sourceTree = "<group>"; };
+		F5E2FD9F2060E4DB00B28CE1 /* TestRetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRetry.swift; sourceTree = "<group>"; };
 		F5FA1098205F5AA0001F9C70 /* RxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FA109B205F5AA0001F9C70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FA109D205F5AA0001F9C70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +75,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F5E2FDA12060E4DF00B28CE1 /* ErrorHandling-错误处理 */ = {
+			isa = PBXGroup;
+			children = (
+				F5E2FD9F2060E4DB00B28CE1 /* TestRetry.swift */,
+			);
+			path = "ErrorHandling-错误处理";
+			sourceTree = "<group>";
+		};
 		F5FA108F205F5AA0001F9C70 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +106,7 @@
 			children = (
 				F5FA109B205F5AA0001F9C70 /* AppDelegate.swift */,
 				F5FA109D205F5AA0001F9C70 /* ViewController.swift */,
+				F5E2FDA12060E4DF00B28CE1 /* ErrorHandling-错误处理 */,
 				F5FA10B6205F8B44001F9C70 /* Subject-既被监听也可观察 */,
 				F5FA10AF205F5EC8001F9C70 /* Observable-可被监听的序列 */,
 				F5FA109F205F5AA0001F9C70 /* Main.storyboard */,
@@ -121,6 +134,7 @@
 				F5FA10B7205F8D9F001F9C70 /* TestPublishSubject.swift */,
 				F5FA10B9205F9AF8001F9C70 /* TestReplaySubject.swift */,
 				F5E2FD9B2060DE5200B28CE1 /* TestBehaviorSubject.swift */,
+				F5E2FD9D2060E04800B28CE1 /* TestVariable.swift */,
 			);
 			path = "Subject-既被监听也可观察";
 			sourceTree = "<group>";
@@ -256,9 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E2FDA02060E4DB00B28CE1 /* TestRetry.swift in Sources */,
 				F5FA10B1205F67A0001F9C70 /* TestCompletable.swift in Sources */,
 				F5E2FD9C2060DE5200B28CE1 /* TestBehaviorSubject.swift in Sources */,
 				F5FA109E205F5AA0001F9C70 /* ViewController.swift in Sources */,
+				F5E2FD9E2060E04800B28CE1 /* TestVariable.swift in Sources */,
 				F5FA10B8205F8D9F001F9C70 /* TestPublishSubject.swift in Sources */,
 				F5FA109C205F5AA0001F9C70 /* AppDelegate.swift in Sources */,
 				F5FA10B5205F8B3F001F9C70 /* TestAsyncSubject.swift in Sources */,

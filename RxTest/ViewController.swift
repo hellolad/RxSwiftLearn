@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         of("single") {
-            TestSingle.test()
+            //TestSingle.test()
         }
         
         of("completable") {
@@ -47,6 +47,14 @@ class ViewController: UIViewController {
         
         of("BehavioSubject") {
             TestBehavioSubject.test()
+        }
+        
+        of("Variable") {
+            TestVariable.test()
+        }
+        
+        of("Retry") {
+            TestRetry.test()
         }
         
     }
