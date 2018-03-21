@@ -61,6 +61,13 @@ class ViewController: UIViewController {
             TestRetryWhen.test()
         }
         
+        of("CatchError") {
+            TestCatchError.test()
+        }
+        
+        of("CatchErrorJustReturn") {
+            TestCatchErrorJustReturn.test()
+        }
     }
 }
 
