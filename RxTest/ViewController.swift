@@ -71,6 +71,14 @@ class ViewController: UIViewController {
         of("CombineLatest") {
             TestCombineLatest.test()
         }
+        
+        of("Concat") {
+            TestConcat.test()
+        }
+        
+        of("Debounce") {
+            TestDebounce.test()
+        }
     }
 }
 

@@ -10,6 +10,8 @@
 		4DEDEB502BCD86770638C131 /* Pods_RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691417A352E5109CF89021B1 /* Pods_RxTest.framework */; };
 		F502497920623178002369B3 /* TestCatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F502497820623178002369B3 /* TestCatchError.swift */; };
 		F502497C20623CE9002369B3 /* TestCombineLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F502497B20623CE9002369B3 /* TestCombineLatest.swift */; };
+		F502497E206244A9002369B3 /* TestConcat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F502497D206244A9002369B3 /* TestConcat.swift */; };
+		F5024980206248A5002369B3 /* TestDebounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = F502497F206248A5002369B3 /* TestDebounce.swift */; };
 		F524F68C2060F3D6002C3826 /* TestRetryWhen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F524F68B2060F3D6002C3826 /* TestRetryWhen.swift */; };
 		F5E2FD9C2060DE5200B28CE1 /* TestBehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2FD9B2060DE5200B28CE1 /* TestBehaviorSubject.swift */; };
 		F5E2FD9E2060E04800B28CE1 /* TestVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2FD9D2060E04800B28CE1 /* TestVariable.swift */; };
@@ -33,6 +35,8 @@
 		C7D960987E4AAB269A1E2DF3 /* Pods-RxTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTest/Pods-RxTest.release.xcconfig"; sourceTree = "<group>"; };
 		F502497820623178002369B3 /* TestCatchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCatchError.swift; sourceTree = "<group>"; };
 		F502497B20623CE9002369B3 /* TestCombineLatest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCombineLatest.swift; sourceTree = "<group>"; };
+		F502497D206244A9002369B3 /* TestConcat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConcat.swift; sourceTree = "<group>"; };
+		F502497F206248A5002369B3 /* TestDebounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDebounce.swift; sourceTree = "<group>"; };
 		F524F68B2060F3D6002C3826 /* TestRetryWhen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRetryWhen.swift; sourceTree = "<group>"; };
 		F5E2FD9B2060DE5200B28CE1 /* TestBehaviorSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBehaviorSubject.swift; sourceTree = "<group>"; };
 		F5E2FD9D2060E04800B28CE1 /* TestVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVariable.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 			children = (
 				F502497820623178002369B3 /* TestCatchError.swift */,
 				F502497B20623CE9002369B3 /* TestCombineLatest.swift */,
+				F502497D206244A9002369B3 /* TestConcat.swift */,
+				F502497F206248A5002369B3 /* TestDebounce.swift */,
 			);
 			path = Operator;
 			sourceTree = "<group>";
@@ -289,12 +295,14 @@
 			files = (
 				F502497C20623CE9002369B3 /* TestCombineLatest.swift in Sources */,
 				F5E2FDA02060E4DB00B28CE1 /* TestRetry.swift in Sources */,
+				F5024980206248A5002369B3 /* TestDebounce.swift in Sources */,
 				F5FA10B1205F67A0001F9C70 /* TestCompletable.swift in Sources */,
 				F5E2FD9C2060DE5200B28CE1 /* TestBehaviorSubject.swift in Sources */,
 				F5FA109E205F5AA0001F9C70 /* ViewController.swift in Sources */,
 				F5E2FD9E2060E04800B28CE1 /* TestVariable.swift in Sources */,
 				F5FA10B8205F8D9F001F9C70 /* TestPublishSubject.swift in Sources */,
 				F502497920623178002369B3 /* TestCatchError.swift in Sources */,
+				F502497E206244A9002369B3 /* TestConcat.swift in Sources */,
 				F5FA109C205F5AA0001F9C70 /* AppDelegate.swift in Sources */,
 				F5FA10B5205F8B3F001F9C70 /* TestAsyncSubject.swift in Sources */,
 				F5FA10B3205F6B50001F9C70 /* TestMaybe.swift in Sources */,
