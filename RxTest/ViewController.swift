@@ -68,6 +68,9 @@ class ViewController: UIViewController {
         of("CatchErrorJustReturn") {
             TestCatchErrorJustReturn.test()
         }
+        of("CombineLatest") {
+            TestCombineLatest.test()
+        }
     }
 }
 
