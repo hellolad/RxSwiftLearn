@@ -16,6 +16,7 @@
 		F5E2FD9C2060DE5200B28CE1 /* TestBehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2FD9B2060DE5200B28CE1 /* TestBehaviorSubject.swift */; };
 		F5E2FD9E2060E04800B28CE1 /* TestVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2FD9D2060E04800B28CE1 /* TestVariable.swift */; };
 		F5E2FDA02060E4DB00B28CE1 /* TestRetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E2FD9F2060E4DB00B28CE1 /* TestRetry.swift */; };
+		F5E517B020688F71008A279F /* TestDistinctUntilChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E517AF20688F71008A279F /* TestDistinctUntilChanged.swift */; };
 		F5FA109C205F5AA0001F9C70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA109B205F5AA0001F9C70 /* AppDelegate.swift */; };
 		F5FA109E205F5AA0001F9C70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA109D205F5AA0001F9C70 /* ViewController.swift */; };
 		F5FA10A1205F5AA0001F9C70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FA109F205F5AA0001F9C70 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		F5E2FD9B2060DE5200B28CE1 /* TestBehaviorSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBehaviorSubject.swift; sourceTree = "<group>"; };
 		F5E2FD9D2060E04800B28CE1 /* TestVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVariable.swift; sourceTree = "<group>"; };
 		F5E2FD9F2060E4DB00B28CE1 /* TestRetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRetry.swift; sourceTree = "<group>"; };
+		F5E517AF20688F71008A279F /* TestDistinctUntilChanged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDistinctUntilChanged.swift; sourceTree = "<group>"; };
 		F5FA1098205F5AA0001F9C70 /* RxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FA109B205F5AA0001F9C70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5FA109D205F5AA0001F9C70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				F502497B20623CE9002369B3 /* TestCombineLatest.swift */,
 				F502497D206244A9002369B3 /* TestConcat.swift */,
 				F502497F206248A5002369B3 /* TestDebounce.swift */,
+				F5E517AF20688F71008A279F /* TestDistinctUntilChanged.swift */,
 			);
 			path = Operator;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				F5FA10B1205F67A0001F9C70 /* TestCompletable.swift in Sources */,
 				F5E2FD9C2060DE5200B28CE1 /* TestBehaviorSubject.swift in Sources */,
 				F5FA109E205F5AA0001F9C70 /* ViewController.swift in Sources */,
+				F5E517B020688F71008A279F /* TestDistinctUntilChanged.swift in Sources */,
 				F5E2FD9E2060E04800B28CE1 /* TestVariable.swift in Sources */,
 				F5FA10B8205F8D9F001F9C70 /* TestPublishSubject.swift in Sources */,
 				F502497920623178002369B3 /* TestCatchError.swift in Sources */,

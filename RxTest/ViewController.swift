@@ -79,6 +79,10 @@ class ViewController: UIViewController {
         of("Debounce") {
             TestDebounce.test()
         }
+        
+        of("DistinctUntilChanged.swift") {
+            TestDistinctUntilChanged.test()
+        }
     }
 }
 
